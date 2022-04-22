@@ -503,7 +503,7 @@ class Base
         }
 
         foreach ($letter as $l) {
-            $teststr = $contents." ".$l;
+            $teststr = $contents . $l;
             $fontBox = imagettfbbox($font, 0, $font_family, $teststr);
             // $testbox = imagettfbbox($fontsize, $angle, $fontface, $teststr);
             // 判断拼接后的字符串是否超过预设的宽度
