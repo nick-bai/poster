@@ -959,7 +959,7 @@
         }
 
         # 自加方法
-        public static function re_png($frame,$pixelPerPoint = 4, $outerFrame = 4) 
+        public static function re_png($frame, $outfile, $pixelPerPoint = 4, $outerFrame = 4) 
         {
             $image = self::image($frame, $pixelPerPoint, $outerFrame);
             
