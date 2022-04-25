@@ -567,8 +567,8 @@ class Base
      * @param  [type]                   $src_x  [description]
      * @param  [type]                   $src_y  [description]
      */
-    protected function CopyQr($text,$size,$margin,$dst_x,$dst_y,$src_x,$src_y,$src_w,$src_h){
-        $result = \QRcode::re_png($text,$size,$margin);
+    protected function CopyQr($text,$size,$margin,$dst_x,$dst_y,$src_x,$src_y,$src_w,$src_h, $level = QR_ECLEVEL_L, $outfile = 4){
+        $result = \QRcode::re_png($text, $outfile, $level, $size, $margin);
         if ($src_w > 0) {
 
             $bgWidth = $src_w;
